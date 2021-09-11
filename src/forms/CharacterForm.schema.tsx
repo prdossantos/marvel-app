@@ -1,5 +1,5 @@
 export interface CharacterFormPropTypes<T> {
-	isLoading?: boolean,
+    isLoading?: boolean,
     loadingText?: string,
     defaultValues: T,
     onSubmit: any,
@@ -7,9 +7,9 @@ export interface CharacterFormPropTypes<T> {
 }
 
 const CharacterFormPropTypesDefault: CharacterFormPropTypes<any> = {
-	isLoading: false,
+    isLoading: false,
     loadingText: "loading...",
-    onSubmit: () => {},
+    onSubmit: () => { },
     defaultValues: {},
     error: ""
 };

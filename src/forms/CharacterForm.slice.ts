@@ -10,13 +10,13 @@ export const CharacterFormSlice = createSlice({
         status: "idle"
     },
     reducers: {
-        update( state, action ) {
+        update(state, action) {
             state.status = "pending"
             state.data = action.payload
             setStorageItem(`form-character-data-${action.payload.id}`, action.payload)
             state.status = "done"
         },
-        setStatus( state, action ) {
+        setStatus(state, action) {
             state.status = action.payload
         }
     },

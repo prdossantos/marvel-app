@@ -13,7 +13,7 @@ const CharacterForm = (props: CharacterFormPropTypes<Character>) => {
     const submit = () => {
         const name = nameEl.current.value;
         const description = descriptionEl.current.value;
-        if( !name || !description) {
+        if (!name || !description) {
             setError({
                 name: !name ? "Campo obrigatório" : null,
                 description: !description ? "Campo obrigatório" : null,
@@ -21,7 +21,7 @@ const CharacterForm = (props: CharacterFormPropTypes<Character>) => {
             return;
         }
         let data = Object.assign({}, defaultValues);
-        onSubmit(Object.assign(data, {name, description}));
+        onSubmit(Object.assign(data, { name, description }));
     };
 
     useEffect(() => {

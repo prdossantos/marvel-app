@@ -6,9 +6,10 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    command: bash -c "npm install; npm start"
+    command: bash -c "npm install; npm start; npm run storybook"
     ports:
       - "3000:3000"
+      - "6006:6006"
     volumes:
       - ./:/usr/src/app
     container_name: react-app

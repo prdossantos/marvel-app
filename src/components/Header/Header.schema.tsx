@@ -2,7 +2,7 @@ export interface HeaderPropTypes {
     /**
      * Indica o link de voltar será exibido
      */
-	showBackLink: boolean,
+    showBackLink: boolean,
     /**
      * Título que será exibido
      */
@@ -26,11 +26,11 @@ export interface HeaderPropTypes {
 }
 
 const HeaderPropTypesDefault: HeaderPropTypes = {
-	title: "",
+    title: "",
     showBackLink: false,
     showRightButton: false,
     rightButtonText: "Editar",
-    onActionClick: () => {}
+    onActionClick: () => { }
 };
 
 export default HeaderPropTypesDefault;
