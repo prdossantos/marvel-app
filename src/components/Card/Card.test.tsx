@@ -14,7 +14,7 @@ test("2. caso: tenha uma ação no card <Card />", async () => {
     let result = "";
     const onActionClick = (ev: SyntheticEvent, id: string) => {
         result = id;
-    }
+    };
     render(<Card title="Nenhum" id={id} hasAction onActionClick={onActionClick} />);
 
     userEvent.click(screen.getByTitle(`Show more for ${id}`));

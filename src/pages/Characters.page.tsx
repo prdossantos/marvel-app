@@ -22,7 +22,7 @@ const CharactersPage = () => {
     });
     const onSearchChange = () => {
         const { value } = searchInput.current;
-        setTitle(value)
+        setTitle(value);
     }
     const navigateTo = (ev: SyntheticEvent, id: string) => {
         history.push(`/character/${id}`)
@@ -30,13 +30,13 @@ const CharactersPage = () => {
 
 
     const { isLoading, data } = useQuery(["characters", title, paginate], async () => {
-        const response = axios.get(`${process.env.REACT_APP_MARVEL_API_URL}/characters?${title ? `name=${title}` : ``}`, {
+        const response = axios.get(`${process.env.REACT_APP_MARVEL_API_URL}/characters?${title ? `name=${title}` : ""}`, {
             params: {
                 apikey: process.env.REACT_APP_MARVEL_KEY,
                 offset: !title ? (paginate.count * paginate.page) : 0,
             }
-        })
-        const { results } = (await response).data.data
+        });
+        const { results } = (await response).data.data;
         return results;
     })
 
@@ -80,10 +80,10 @@ const CharactersPage = () => {
                                     <li className={classNames("page-item", {
                                         "disabled": !paginate.offset
                                     })}>
-                                        <button className="page-link" onClick={() => setPaginate(prev => Object.assign({}, prev, { page: prev.page - 1 }))}>Previous</button>
+                                        <button className="page-link" onClick={() => setPaginate((prev) => Object.assign({}, prev, { page: prev.page - 1 }))}>Previous</button>
                                     </li>
                                     <li className="page-item">
-                                        <button className="page-link" onClick={() => setPaginate(prev => Object.assign({}, prev, { page: prev.page + 1 }))}>Next</button>
+                                        <button className="page-link" onClick={() => setPaginate((prev) => Object.assign({}, prev, { page: prev.page + 1 }))}>Next</button>
                                     </li>
                                 </ul>
                             </nav></Fragment>}

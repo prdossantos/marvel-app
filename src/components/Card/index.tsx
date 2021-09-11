@@ -24,7 +24,7 @@ const Card = (props: CardPropTypes) => {
             </div>
         </div>
     );
-}
+};
 
 Card.defaultProps = CardPropTypesDefault;
 

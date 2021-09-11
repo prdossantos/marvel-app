@@ -1,11 +1,11 @@
-import { Fragment } from "react"
-import classNames from "classnames"
-import { LoaderPropTypes, LoaderPropTypesDefault } from "./Loader.schema"
+import { Fragment } from "react";
+import classNames from "classnames";
+import { LoaderPropTypes, LoaderPropTypesDefault } from "./Loader.schema";
 
 
 const Loader = (props: LoaderPropTypes) => {
 
-    const { isActive, isPageLoader, background, color, message, showDots } = props
+    const { isActive, isPageLoader, background, color, message, showDots } = props;
 
     return (
         <Fragment>
@@ -28,8 +28,8 @@ const Loader = (props: LoaderPropTypes) => {
             </span>
         </Fragment>
     )
-}
+};
 
-export default Loader
+export default Loader;
 
-Loader.defaultProps = LoaderPropTypesDefault
+Loader.defaultProps = LoaderPropTypesDefault;
