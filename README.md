@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4af9d4089fdd4dca9da1e93fecaa1e65)](https://www.codacy.com/gh/prdossantos/document-validation-app/dashboard?utm_source=github.com&utm_medium=referral&utm_content=prdossantos/document-validation-app&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/4af9d4089fdd4dca9da1e93fecaa1e65)](https://www.codacy.com/gh/prdossantos/document-validation-app/dashboard?utm_source=github.com&utm_medium=referral&utm_content=prdossantos/document-validation-app&utm_campaign=Badge_Coverage)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Marvel APP
 
-## Available Scripts
+Seus personagens favoritos em um só lugar ;)
 
-In the project directory, you can run:
+## Recursos utilizados
 
-### `yarn start`
+1.  ReactJS ( com create-ract-app )
+2.  Typescript
+3.  Boostrap
+4.  Redux
+5.  Test ( Jest com @testing-library/react )
+6.  React Query ( com axios )
+7.  Doc ( com storybook )
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Como usar localmente
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1.  Clone este repositório e execute o comando: `yarn install`.
+2.  Execute o comando: `yarn start`.
+4.  Por padrão irá iniciar em <http://localhost:3000>.
 
-### `yarn test`
+## Use o docker e seja feliz :)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se você tiver o docker e docker-compose, basta seguir os passos.
 
-### `yarn build`
+1.  Execute o comando: `docker-compose build`
+2.  Execute o comando: `docker-compose up`,  isso pode demorar um pouco dependendo do seu PC.
+3.  Aguarge a mensagem: `react-app    |   Local:            http://localhost:3000`
+5.  Por padrão irá iniciar em <http://localhost:3000>.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura de pastas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O projeto segue a seguinte estrutura.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+src/
+  - components    # Contém os componentes globais do app
+  - pages         # Contém as páginas de acesso
+  - schemas       # Contém os esquemas da regra de negócio
+  - forms         # Contém os formulários da aplicação
+```
 
-### `yarn eject`
+*Os ```components``` e ```forms``` forão criados para serem independentes( sem lógica de negócio ), assim podem ser reaproveitados.
+Desta forma toda lógica fica contida nas páginas, assim, temos componentes com teste unitário e as páginas com testes de integração( **não foram aplicados neste projeto** ).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Como rodar os testes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para rodar os testes utilize o camando abaixo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Isso irá rodar todos os testes
+`yarn test --collect-coverage`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Também será gerado um relatório de cobertura de código na pasta `./coverage`.
+Você pode visualizar no navegador acessessando `./coverage/lcov-report/index.html`
