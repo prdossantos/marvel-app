@@ -1,12 +1,12 @@
 import { Suspense } from "react";
-import { createBrowserHistory } from 'history';
+import { createBrowserHistory } from "history";
 import { Redirect, Route, Router, Switch } from "react-router";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Loader from "./components/Loader";
 import { routes } from "./routes";
 
 export const browserHistory = createBrowserHistory({
-    basename: '',
+    basename: "",
     forceRefresh: false
 })
 

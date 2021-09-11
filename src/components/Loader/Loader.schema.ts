@@ -24,7 +24,7 @@ export interface LoaderPropTypes {
      * Insira a mensagem que será exibida
      */
     message?: string
-}
+};
 
 export const LoaderPropTypesDefault: LoaderPropTypes = {
     isActive: false,
@@ -33,5 +33,5 @@ export const LoaderPropTypesDefault: LoaderPropTypes = {
     color: "text-secondary",
     background: "bg-primary",
     message: "PROCESSANDO"
-}
+};
 

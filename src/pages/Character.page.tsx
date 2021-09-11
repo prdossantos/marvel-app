@@ -27,7 +27,7 @@ const CharacterPage = () => {
         const { results } = (await response).data.data;
         let item = results.length ? results[0] : {};
         if (item && item.id) {
-            item = Object.assign(item, getStorageItem<Character>(`form-character-data-${item.id}`, {}))
+            item = Object.assign(item, getStorageItem<Character>(`form-character-data-${item.id}`, {}));
         }
         setSeries(item.series.items);
         return item;
@@ -78,6 +78,6 @@ const CharacterPage = () => {
             </div>
         </div>
     </div>
-}
+};
 
 export default CharacterPage;

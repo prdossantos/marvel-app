@@ -11,16 +11,16 @@ export const CharacterFormSlice = createSlice({
     },
     reducers: {
         update(state, action) {
-            state.status = "pending"
-            state.data = action.payload
-            setStorageItem(`form-character-data-${action.payload.id}`, action.payload)
-            state.status = "done"
+            state.status = "pending";
+            state.data = action.payload;
+            setStorageItem(`form-character-data-${action.payload.id}`, action.payload);
+            state.status = "done";
         },
         setStatus(state, action) {
-            state.status = action.payload
+            state.status = action.payload;
         }
     },
     extraReducers: {}
-})
+});
 
-export default CharacterFormSlice.reducer
+export default CharacterFormSlice.reducer;

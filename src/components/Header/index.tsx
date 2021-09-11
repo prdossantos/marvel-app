@@ -21,7 +21,7 @@ const Header = (props: HeaderPropTypes) => {
             {!showRightButton && showBackLink ? <span></span> : null}
         </div>
     );
-}
+};
 
 Header.defaultProps = HeaderPropTypesDefault;
 
