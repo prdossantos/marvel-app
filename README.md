@@ -1,5 +1,5 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2fe26fdf59f244beb636b1d82eccb8d0)](https://www.codacy.com/gh/prdossantos/marvel-app/dashboard?utm_source=github.com&utm_medium=referral&utm_content=prdossantos/marvel-app&utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2fe26fdf59f244beb636b1d82eccb8d0)](https://www.codacy.com/gh/prdossantos/marvel-app/dashboard?utm_source=github.com&utm_medium=referral&utm_content=prdossantos/marvel-app&_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/2fe26fdf59f244beb636b1d82eccb8d0)](https://www.codacy.com/gh/prdossantos/marvel-app/dashboard?utm_source=github.com&utm_medium=referral&utm_content=prdossantos/marvel-app&utm_campaign=Badge_Coverage)
 
 # Marvel APP
 
