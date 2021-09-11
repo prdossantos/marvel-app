@@ -8,7 +8,7 @@ import { routes } from "./routes";
 export const browserHistory = createBrowserHistory({
     basename: "",
     forceRefresh: false
-})
+});
 
 const App = () => {
 
@@ -35,6 +35,6 @@ const App = () => {
             </Router>
         </QueryClientProvider>
     );
-}
+};
 
 export default App;

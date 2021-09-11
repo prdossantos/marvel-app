@@ -9,10 +9,20 @@ services:
     command: bash -c "npm install; npm start; npm run storybook"
     ports:
       - "3000:3000"
-      - "6006:6006"
     volumes:
       - ./:/usr/src/app
     container_name: react-app
+    networks:
+      - reactapp
+  react-app-doc:
+    volumes:
+      - ./:/usr/src/app
+    container_name: react-app-doc
+    ports:
+      - "6006:6006"
+    links:
+      react-app
+    command: bash -c "npm run storybook"
     networks:
       - reactapp
 networks:

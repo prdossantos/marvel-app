@@ -24,7 +24,7 @@ export interface LoaderPropTypes {
      * Insira a mensagem que será exibida
      */
     message?: string
-};
+}
 
 export const LoaderPropTypesDefault: LoaderPropTypes = {
     isActive: false,

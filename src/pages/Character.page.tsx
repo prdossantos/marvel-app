@@ -77,7 +77,7 @@ const CharacterPage = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div>;
 };
 
 export default CharacterPage;
