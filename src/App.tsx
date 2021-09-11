@@ -26,7 +26,7 @@ const App = () => {
             <Router history={browserHistory}>
                 <Suspense fallback={<Loader isPageLoader={true} isActive={true} />}>
                     <Switch>
-                        {routes.map(route =><Route key={route.name} path={route.path} exact={route.exact} component={route.component} />)}
+                        {routes.map((route) => <Route key={route.name} path={route.path} exact={route.exact} component={route.component} />)}
                         <Route path="*">
                             <Redirect to="/characters" />
                         </Route>

@@ -1,25 +1,20 @@
-@import 'node_modules/bootstrap/scss/functions';
+@import "node_modules/bootstrap/scss/functions";
 
-$primary: #7F5D7F !default;
+$primary: #7f5d7f !default;
 $secondary: #593259 !default;
-$success: #8BBB45 !default;
-$info: #56CCF2 !default;
-$warning: #FF9000 !default;
-$danger: #EB5757 !default;
-$white: #FFFFFF !default;
+$success: #8bbb45 !default;
+$info: #56ccf2 !default;
+$warning: #ff9000 !default;
+$danger: #eb5757 !default;
+$white: #ffffff !default;
 $light: $white !default;
-$dark: #7A7A7A !default;
+$dark: #7a7a7a !default;
 
 $link-color: $secondary !default;
 
-$form-floating-height:  add(3rem, 0);
+$form-floating-height: add(3rem, 0);
 
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/bootstrap";
 
-@import 'node_modules/bootstrap/scss/variables';
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-/*-----------------------------------------------
-|   Componentes
------------------------------------------------*/
-@import 'components';
-
+@import "components";

@@ -15,10 +15,10 @@ const Header = (props: HeaderPropTypes) => {
             <h4 className="text-truncate mx-3 my-0">{title}</h4>
             {showRightButton && <button
                 type="button"
-                onClick={ ( ev ) => onActionClick(ev, id) }
+                onClick={(ev) => onActionClick(ev, id)}
                 className="btn btn-xs btn-primary">{rightButtonText}</button>
             }
-            {!showRightButton && showBackLink ? <span></span> : null }
+            {!showRightButton && showBackLink ? <span></span> : null}
         </div>
     );
 }

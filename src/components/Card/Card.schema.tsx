@@ -2,7 +2,7 @@ export interface CardPropTypes {
     /**
      * Link ou base64 da imagem
      */
-	image?: string,
+    image?: string,
     /**
      * Título do card
      */
@@ -32,10 +32,10 @@ export interface CardPropTypes {
 }
 
 const CardPropTypesDefault: CardPropTypes = {
-	title: "",
+    title: "",
     hasAction: false,
     shadow: "default",
-    onActionClick: () => {}
+    onActionClick: () => { }
 };
 
 export default CardPropTypesDefault;

@@ -2,8 +2,8 @@ import classNames from "classnames";
 import React from "react";
 import CardPropTypesDefault, { CardPropTypes } from "./Card.schema";
 
-const Card = ( props: CardPropTypes) => {
-    const {title, description, image, id, hasAction, shadow, onActionClick} = props;
+const Card = (props: CardPropTypes) => {
+    const { title, description, image, id, hasAction, shadow, onActionClick } = props;
 
     return (
         <div className={classNames("card", {
@@ -18,7 +18,7 @@ const Card = ( props: CardPropTypes) => {
                 {hasAction && <button
                     type="button"
                     title={`Show more for ${id}`}
-                    onClick={ ( ev ) => onActionClick(ev, id) }
+                    onClick={(ev) => onActionClick(ev, id)}
                     className="btn btn-primary">Detalhes</button>
                 }
             </div>
