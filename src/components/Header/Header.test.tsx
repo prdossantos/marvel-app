@@ -14,7 +14,7 @@ test("2. caso: tenha uma ação no <Header />", async () => {
     let result = "";
     const onActionClick = (ev: SyntheticEvent, id: string) => {
         result = id;
-    }
+    };
     render(<Header title="Nenhum" id={id} showRightButton onActionClick={onActionClick} />);
 
     userEvent.click(screen.getByRole("button"));

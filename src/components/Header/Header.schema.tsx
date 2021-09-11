@@ -23,7 +23,7 @@ export interface HeaderPropTypes {
      * Função de retorno da ação de click, irá retornoar 2 parametros
      */
     onActionClick: any,
-};
+}
 
 const HeaderPropTypesDefault: HeaderPropTypes = {
     title: "",

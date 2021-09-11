@@ -27,7 +27,7 @@ const Loader = (props: LoaderPropTypes) => {
                 </span>
             </span>
         </Fragment>
-    )
+    );
 };
 
 export default Loader;

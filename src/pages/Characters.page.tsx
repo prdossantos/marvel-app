@@ -23,9 +23,9 @@ const CharactersPage = () => {
     const onSearchChange = () => {
         const { value } = searchInput.current;
         setTitle(value);
-    }
+    };
     const navigateTo = (ev: SyntheticEvent, id: string) => {
-        history.push(`/character/${id}`)
+        history.push(`/character/${id}`);
     }
 
 
@@ -38,7 +38,7 @@ const CharactersPage = () => {
         });
         const { results } = (await response).data.data;
         return results;
-    })
+    });
 
     return isLoading ? <Loader isActive={isLoading} isPageLoader /> : <div className="container-fluid">
         <div className="container-xxl">
@@ -91,13 +91,13 @@ const CharactersPage = () => {
                         {data && !data.length && <div className="col-xs-12 mb-3" ><Card
                             title={"Nenhum personagem encontrado"}
                             description={"Verifique os filtros utilizados"}
-                            id={`no-items`}
+                            id={"no-items"}
                         /></div>}
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>;
 }
 
 export default CharactersPage;
