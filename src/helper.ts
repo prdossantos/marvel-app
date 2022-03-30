@@ -12,7 +12,7 @@ export const getStorageItem = <T>(key: string = "", defaultValue: any = null, st
         }
     } catch (e) { 
  console.error(key, 'error', e);
-        clearStoreItem(key);
+clearStoreItem(key);
     }
 return defaultValue;
 };
