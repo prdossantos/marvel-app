@@ -20,6 +20,8 @@ const App = () => {
             },
         },
     })
+    
+console.error(queryClient, "error", e);
 
     return (
         <QueryClientProvider client={queryClient}>
