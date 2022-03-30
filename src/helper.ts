@@ -14,7 +14,7 @@ export const getStorageItem = <T>(key: string = "", defaultValue: any = null, st
  console.error(key, 'error', e);
         clearStoreItem(key);
     }
-    return defaultValue;
+return defaultValue;
 };
 
 export const setStorageItem = (
