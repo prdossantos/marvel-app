@@ -8,7 +8,8 @@ import { store } from "./store";
 
 ReactDOM.render(
     <Provider store={store}>
-        <Suspense fallback={<Loader isPageLoader={true} isActive={true} />}>
+        <Suspense fallback={<Loader 
+                                isPageLoader={true} isActive={true} />}>
             <App />
         </Suspense>
     </Provider>,
